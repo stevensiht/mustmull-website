@@ -1,21 +1,21 @@
 const testimonials = [
   {
     name: "Alicia & Marco",
-    role: "Wedding in Malibu",
+    role: "Pulm Malibus",
     quote:
-      "They handled every detail and made our night feel like a private cocktail lounge. Guests still talk about the espresso martinis.",
+      "Nad hoolitsesid iga detaili eest ja muutsid meie õhtu privaatse kokteililounge'ina tunduvaks. Külalised räägivad siiani espresso-martinidest.",
   },
   {
     name: "Brightside Agency",
-    role: "Product launch",
+    role: "Toote lansseerimine",
     quote:
-      "Logistics were seamless, branding matched our deck, and the neon signage pulled everyone straight to the bar.",
+      "Logistika oli laitmatu, bränding sobitus meie esitlustega ja neoonreklaam tõmbas kõik otse baari.",
   },
   {
     name: "Jordan H.",
-    role: "40th Birthday Bash",
+    role: "40. sünnipäeva pidu",
     quote:
-      "Playful, professional, and somehow remembered every guest’s favorite drink after one round.",
+      "Mängulised, professionaalsed ja kuidagi jätsid juba ühe ringi järel meelde iga külalise lemmikjoogi.",
   },
 ];
 
@@ -25,14 +25,14 @@ export function TestimonialsSection() {
       <div className="mx-auto flex max-w-5xl flex-col gap-10 px-6 sm:px-8">
         <div className="space-y-3">
           <span className="text-xs uppercase tracking-[0.35em] text-accent">
-            Love notes
+            Kiidusõnad
           </span>
           <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-            Clients we celebrate.
+            Kliendid, keda tähistame.
           </h2>
           <p className="max-w-2xl text-base text-white/70 sm:text-lg">
-            Swap these with your own reviews once we&rsquo;ve shaken up your
-            event.
+            Vaheta need peagi oma arvustuste vastu, kui oleme sinu ürituse
+            raputanud.
           </p>
         </div>
 

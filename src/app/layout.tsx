@@ -15,9 +15,9 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Must Mull Mobile Cocktail Bar",
+  title: "Must Mull mobiilne kokteilibaar",
   description:
-    "Playful professionals shaking custom cocktails and unforgettable memories for your next celebration.",
+    "Mänguline professionaalne tiim, kes raputab sinu peole eritellimusel kokteile ja unustamatuid hetki.",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="et">
       <body
         className={`${display.variable} ${body.variable} antialiased bg-background text-foreground`}
       >

@@ -11,37 +11,38 @@ export function SignatureSection() {
             fill
             className="object-cover object-center"
             src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=2000&q=80"
-            alt="Signature cocktail with vibrant pink foam and garnish"
+            alt="Signatuurkokteil erksa roosa vahuga ja kaunistusega"
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-background/70 via-transparent to-transparent" />
           <div className="absolute bottom-6 left-6 rounded-full border border-white/15 bg-background/70 px-5 py-3 text-xs uppercase tracking-[0.35em] text-white/70 backdrop-blur">
-            House favorite: Electric Bloom
+            Majalemmik: Electric Bloom
           </div>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-[2fr_1fr] sm:items-start">
           <div className="space-y-4">
             <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-              Meet the Electric Bloom.
+              Tutvu Electric Bloomiga.
             </h2>
             <p className="text-base text-white/70 sm:text-lg">
-              Gin kissed with hibiscus tea, fresh citrus, and a neon pink foam
-              that lights up every toast. It&rsquo;s balanced, bold, and the
-              cocktail guests remember by name.
+              Džinn kohtub hibiskitee, värske tsitruse ja neoonroosa vahuga, mis
+              paneb iga toosti särama. Tasakaalukas, julge ja kokteil, mille
+              külalised jätavad nimepidi meelde.
             </p>
           </div>
           <ul className="grid gap-3 text-sm text-white/70 sm:text-base">
             <li className="rounded-2xl border border-white/10 bg-background/80 px-5 py-4">
-              <strong className="block text-white">Flavor Notes</strong>
-              Floral citrus, bright berries, gentle spice.
+              <strong className="block text-white">Maitsenoodid</strong>
+              Lillerikas tsitrus, erksad marjad, peen vürts.
             </li>
             <li className="rounded-2xl border border-white/10 bg-background/80 px-5 py-4">
-              <strong className="block text-white">Why it rocks</strong>
-              Theatre at the bar, photogenic pours, crushable taste.
+              <strong className="block text-white">Miks see on hitt</strong>
+              Teatriline baarielamus, fotogeenilised valamised, vastupandamatu
+              maitse.
             </li>
             <li className="rounded-2xl border border-white/10 bg-background/80 px-5 py-4">
-              <strong className="block text-white">Zero-proof twin</strong>
-              Swap spirit for botanical tonic—same glow, all delight.
+              <strong className="block text-white">Alkoholivaba kaksik</strong>
+              Vaheta kange jook taimse tooniku vastu—sama sära, puhas rõõm.
             </li>
           </ul>
         </div>

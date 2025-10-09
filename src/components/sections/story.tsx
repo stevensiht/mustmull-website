@@ -11,26 +11,25 @@ export function StorySection() {
           <Image
             fill
             className="object-cover object-center"
-            src="https://images.unsplash.com/photo-1527169402691-feff5539e52c?q=80&w=2000&auto=format&fit=crop"
-            alt="Bartenders preparing drinks at a private event"
+            src="https://images.unsplash.com/photo-1609345265499-2133bbeb6ce5?q=80&w=2000&auto=format&fit=crop"
+            alt="Baarmenid valmistavad jooke erapeol"
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-background/70 via-transparent to-transparent" />
         </div>
 
         <div className="space-y-6 px-6 pb-10 pt-8 sm:px-10 sm:pb-12">
           <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-            Our story is shaken, not stirred.
+            Meie lugu on raputatud, mitte segatud.
           </h2>
           <p className="text-base text-white/80 sm:text-lg">
-            We started Must Mull to make hosting wildly easier. No worrying
-            about stocking spirits, bringing the bar, or keeping the good vibes
-            flowing—we do it all with a wink, a smile, and a serious respect for
-            craft cocktails.
+            MustMull sündis soovist tuua igale üritusele kaasa midagi erilist –
+            elamuse. Meie stiilne kokteilitreiler ja mobiilsed baariletid
+            pakuvad värskeid, käsitööna valmistatud kokteile nii väikestel
+            erapidudel kui ka suurüritustel.
           </p>
           <p className="text-sm text-white/60 sm:text-base">
-            From intimate anniversaries to neon-lit launch parties, our mobile
-            team brings the bar, the bartenders, and the kind of energy that has
-            guests asking, &ldquo;Who did you book?&rdquo;
+            Olgu see suvefestival, jõulupidu või ettevõtte sünnipäev – meie
+            toome peo kohale.
           </p>
         </div>
       </div>

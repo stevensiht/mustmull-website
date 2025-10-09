@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export function ContactSection() {
   return (
     <section
@@ -13,31 +11,180 @@ export function ContactSection() {
 
       <div className="mx-auto flex max-w-4xl flex-col gap-8 px-6 text-center sm:px-8">
         <span className="text-xs uppercase tracking-[0.35em] text-accent">
-          Let’s plan
+          Teeme plaani
         </span>
         <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-          Ready to book Must Mull?
+          Valmis Must Mulli broneerima?
         </h2>
         <p className="text-base text-white/70 sm:text-lg">
-          Tell us about your event, guest count, and dream drinks—we&rsquo;ll
-          reply within one business day.
+          Räägi meile oma üritusest, külaliste arvust ja unistuste jookidest—
+          vastame 24 tunni jooksul.
         </p>
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-6">
-          <Link
-            href="mailto:hello@mustmull.com"
-            className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-background shadow-[0_12px_30px_-12px_rgba(255,46,142,0.7)] transition hover:translate-y-0.5 hover:shadow-[0_18px_40px_-14px_rgba(255,46,142,0.55)]"
-          >
-            Email us
-          </Link>
-          <Link
-            href="tel:+1234567890"
-            className="inline-flex items-center justify-center rounded-full border border-white/40 px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-white transition hover:border-white hover:bg-white/10"
-          >
-            Call or text
-          </Link>
-        </div>
+        <form className="grid gap-6 text-left">
+          <div className="grid gap-2">
+            <label
+              htmlFor="fullName"
+              className="text-xs font-semibold uppercase tracking-[0.25em] text-white/60"
+            >
+              Täisnimi
+            </label>
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              required
+              className="w-full rounded-2xl border border-white/15 bg-background/80 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
+              placeholder="Mari Maasikas"
+            />
+          </div>
+
+          <div className="grid gap-2 sm:grid-cols-2 sm:gap-4">
+            <div className="grid gap-2">
+              <label
+                htmlFor="email"
+                className="text-xs font-semibold uppercase tracking-[0.25em] text-white/60"
+              >
+                E-post
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                className="w-full rounded-2xl border border-white/15 bg-background/80 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
+                placeholder="nimi@ettevote.ee"
+              />
+            </div>
+            <div className="grid gap-2">
+              <label
+                htmlFor="phone"
+                className="text-xs font-semibold uppercase tracking-[0.25em] text-white/60"
+              >
+                Telefon
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                required
+                className="w-full rounded-2xl border border-white/15 bg-background/80 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
+                placeholder="+372 5555 1234"
+              />
+            </div>
+          </div>
+
+          <div className="grid gap-2 sm:grid-cols-2 sm:gap-4">
+            <div className="grid gap-2">
+              <label
+                htmlFor="eventDate"
+                className="text-xs font-semibold uppercase tracking-[0.25em] text-white/60"
+              >
+                Ürituse kuupäev
+              </label>
+              <input
+                id="eventDate"
+                name="eventDate"
+                type="date"
+                required
+                className="w-full rounded-2xl border border-white/15 bg-background/80 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
+              />
+            </div>
+            <div className="grid gap-2">
+              <label
+                htmlFor="location"
+                className="text-xs font-semibold uppercase tracking-[0.25em] text-white/60"
+              >
+                Asukoht
+              </label>
+              <input
+                id="location"
+                name="location"
+                type="text"
+                required
+                className="w-full rounded-2xl border border-white/15 bg-background/80 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
+                placeholder="Tallinn, Telliskivi Loomelinnak"
+              />
+            </div>
+          </div>
+
+          <div className="grid gap-2">
+            <label
+              htmlFor="guestCount"
+              className="text-xs font-semibold uppercase tracking-[0.25em] text-white/60"
+            >
+              Külaliste arv
+            </label>
+            <input
+              id="guestCount"
+              name="guestCount"
+              type="number"
+              min={1}
+              required
+              className="w-full rounded-2xl border border-white/15 bg-background/80 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
+              placeholder="nt 120"
+            />
+          </div>
+
+          <fieldset className="grid gap-3 rounded-2xl border border-white/15 bg-background/60 p-6">
+            <legend className="text-xs font-semibold uppercase tracking-[0.25em] text-white/60">
+              Teenuse valik
+            </legend>
+            <div className="grid gap-2 text-sm text-white/80 sm:grid-cols-3 sm:gap-3">
+              {[
+                { id: "service-trailer", label: "Haagisbaar", value: "trailer" },
+                { id: "service-mobile", label: "Liikuv baar", value: "mobile" },
+                { id: "service-both", label: "Mõlemad", value: "both" },
+              ].map((option) => (
+                <label
+                  key={option.id}
+                  htmlFor={option.id}
+                  className="flex items-center gap-3 rounded-xl border border-white/10 bg-background/70 px-4 py-3 transition hover:border-accent/50"
+                >
+                  <input
+                    id={option.id}
+                    name="serviceType"
+                    type="radio"
+                    value={option.value}
+                    required
+                    className="size-4 border-white/40 bg-transparent text-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
+                  />
+                  {option.label}
+                </label>
+              ))}
+            </div>
+          </fieldset>
+
+          <div className="grid gap-2">
+            <label
+              htmlFor="message"
+              className="text-xs font-semibold uppercase tracking-[0.25em] text-white/60"
+            >
+              Sõnum
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows={4}
+              required
+              className="w-full rounded-2xl border border-white/15 bg-background/80 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
+              placeholder="Räägi meile oma ürituse visioonist, erisoovidest või detailidest."
+            />
+          </div>
+
+          <div className="flex flex-col items-center gap-3 text-center sm:flex-row sm:justify-between">
+            <p className="text-xs uppercase tracking-[0.35em] text-white/60">
+              Vastame 24 tunni jooksul
+            </p>
+            <button
+              type="submit"
+              className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-background shadow-[0_12px_30px_-12px_rgba(255,46,142,0.7)] transition hover:translate-y-0.5 hover:shadow-[0_18px_40px_-14px_rgba(255,46,142,0.55)]"
+            >
+              Saada päring
+            </button>
+          </div>
+        </form>
         <p className="text-xs uppercase tracking-[0.35em] text-white/60">
-          Serving Southern California &amp; beyond
+          Teenindame üle Eesti ja ka kaugemal
         </p>
       </div>
     </section>

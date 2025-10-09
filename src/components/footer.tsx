@@ -7,7 +7,7 @@ export function SiteFooter() {
         <div className="flex flex-col gap-2">
           <span className="font-display text-lg text-white">Must Mull</span>
           <p className="text-xs uppercase tracking-[0.3em]">
-            Cocktails on wheels, memories on repeat.
+            Kokteilid ratastel, mälestused kordusel.
           </p>
         </div>
         <div className="flex flex-col gap-3 text-white/70 sm:text-right">
