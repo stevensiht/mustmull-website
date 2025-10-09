@@ -35,3 +35,21 @@ body {
 .mask-soft {
   mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
 }
+
+.gallery-track {
+  animation: gallery-marquee 45s linear infinite;
+  will-change: transform;
+}
+
+.gallery-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes gallery-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
