@@ -1,4 +1,4 @@
-## Must Mull — Mobile Cocktail Bar
+## MustMull — Mobile Cocktail Bar
 
 Playful and professional single-page site built with Next.js 15 and Tailwind CSS v4. The layout is mobile-first, showcases large-format imagery, and highlights each step of your service offering—from hero CTA through contact.
 
@@ -16,6 +16,11 @@ npm run dev
 ```
 
 Visit `http://localhost:3000` and adjust copy or imagery in real-time.
+
+### Environment Variables
+- `RESEND_API_KEY` — private API key from the Resend dashboard.
+- `RESEND_FROM_EMAIL` — verified sender domain/email in Resend (e.g. `MustMull <hello@mustmull.ee>`).
+- `RESEND_TO_EMAIL` — comma-separated list of inboxes that should receive form submissions.
 
 ## Customizing Content
 - Hero, story, services, signature cocktail, gallery, testimonials, and contact sections live in `src/components/sections`.

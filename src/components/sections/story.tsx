@@ -19,10 +19,10 @@ export function StorySection() {
 
         <div className="space-y-6 px-6 pb-10 pt-8 sm:px-10 sm:pb-12">
           <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-            Meie lugu on raputatud, mitte segatud.
+            Meie lugu sai alguse soovist luua elamusi, mitte lihtsalt kokteile.
           </h2>
           <p className="text-base text-white/80 sm:text-lg">
-            MustMull sündis soovist tuua igale üritusele kaasa midagi erilist –
+            MustMull sündis soovist tuua igale üritusele kaasa midagi erilist -
             elamuse. Meie stiilne kokteilitreiler ja mobiilsed baariletid
             pakuvad värskeid, käsitööna valmistatud kokteile nii väikestel
             erapidudel kui ka suurüritustel.

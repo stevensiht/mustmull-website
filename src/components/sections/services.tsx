@@ -84,12 +84,13 @@ export function ServicesSection() {
             Mida me pakume
           </span>
           <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-            Kõik murevaba võõrustamise jaoks
+            Kõik, mida vajad ideaalseks peoks!
           </h2>
           <p className="max-w-2xl text-base text-white/70 sm:text-lg">
-            Kõik, mida pakume, on loodud su üritusse sujuvalt sobituma. Mõtle
-            kvaliteetsete jookide, timmitud logistika ja baarmenide peale, kes
-            tunnevad end kui külalistenimekirja liikmed.
+            MustMull pakub täisteenust alates mobiilsetest baarilettidest,
+            suvesündmustele kokteilitreilerist, kokteilidest ja varustusest kuni
+            säravate baarmenideni. Me hoolitseme detailide eest, et sina saaksid
+            lihtsalt hetke nautida.
           </p>
         </div>
 
@@ -110,9 +111,7 @@ export function ServicesSection() {
                   <h3 className="font-display text-xl font-semibold text-white">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-white/70">
-                    {service.description}
-                  </p>
+                  <p className="text-sm text-white/70">{service.description}</p>
                   <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
                     {service.detail}
                   </p>

@@ -1,15 +1,15 @@
 const testimonials = [
   {
-    name: "Alicia & Marco",
-    role: "Pulm Malibus",
+    name: "Kristi D.",
+    role: "Võidupüha pidu",
     quote:
-      "Nad hoolitsesid iga detaili eest ja muutsid meie õhtu privaatse kokteililounge'ina tunduvaks. Külalised räägivad siiani espresso-martinidest.",
+      "MustMull on imeline kooslus, mis teeb sündmuse väga eriliseks. Mina näiteks armastan Jaanipäeva ja selle tähistamist. Mõnel aastal käib mul sel ajal kodus 100 sõpra, teisel aastal 300 ja kolmandal 8. Kui MustMull kohal on, siis teeb see olukorra pidulikuks nagu Võidupühale kohane. Ja nad ei tee mingit numbrit sellest, kui palju sul rahvast on. Imetabased kokteilid, nad selgitavad, miks ja mida tehakse, naerusuised inimeste inimesed - lõbus, maitsev, läbimõeldud ja pidulik on nende märksõnad.",
   },
   {
-    name: "Brightside Agency",
-    role: "Toote lansseerimine",
+    name: "ED Events",
+    role: "Erapidu",
     quote:
-      "Logistika oli laitmatu, bränding sobitus meie esitlustega ja neoonreklaam tõmbas kõik otse baari.",
+      "Koostöö Musta Mulliga on ladus, kindel, usaldusväärne ja soe! Oma ala proffidega saab teenus just selline, millist üritusele vaja on. Kogused on õiged, baaridaamid/manid on ägedad, maitsed on lummavad! MustMull ei löö risti ette ka hulljulgematele ideedele, millega rõõmuga kaasa minnakse. Enda poolt antakse alati maksimum, et nii tellija kui baarikülaline rahul oleks ja seepärast on Musta Mulli ägeda baarimajakese juures alati lõbus seltskondlik sumin. Seda ürituskorraldajad ostaksid! Ja, no - MustMull - nimi on ka väga lahe! :)",
   },
   {
     name: "Jordan H.",
@@ -42,7 +42,9 @@ export function TestimonialsSection() {
               key={item.name}
               className="flex flex-col justify-between gap-6 rounded-3xl border border-white/10 bg-background/80 p-6"
             >
-              <p className="text-sm italic text-white/70">&ldquo;{item.quote}&rdquo;</p>
+              <p className="text-sm italic text-white/70">
+                &ldquo;{item.quote}&rdquo;
+              </p>
               <div>
                 <p className="font-display text-lg text-white">{item.name}</p>
                 <p className="text-xs uppercase tracking-[0.25em] text-gold">

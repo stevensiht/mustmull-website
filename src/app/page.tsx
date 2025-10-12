@@ -7,6 +7,8 @@ import { SignatureSection } from "@/components/sections/signature";
 import { StorySection } from "@/components/sections/story";
 import { TestimonialsSection } from "@/components/sections/testimonials";
 
+export const dynamic = "force-static";
+
 export default function Home() {
   return (
     <>

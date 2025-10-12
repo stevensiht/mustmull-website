@@ -15,7 +15,7 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Must Mull mobiilne kokteilibaar",
+  title: "MustMull mobiilne kokteilibaar",
   description:
     "Mänguline professionaalne tiim, kes raputab sinu peole eritellimusel kokteile ja unustamatuid hetki.",
 };

@@ -18,7 +18,7 @@ export function HeroSection() {
           <Link href="/" className="w-fit">
             <Image
               src="/mustmull_logo.svg"
-              alt="Must Mulli logo"
+              alt="MustMulli logo"
               width={172}
               height={48}
               priority
@@ -30,12 +30,14 @@ export function HeroSection() {
               Mobiilne kokteilibaar
             </span>
             <h1 className="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-              Liikuv kokteilielamus sinu üritusele!
+              Me ei oota teid baaris - me toome kokteilibaari teie juurde!
             </h1>
             <p className="max-w-xl text-base text-white/80 sm:text-lg">
-              Must Mull toob sinu peole mängulise ja professionaalse tiimi -
-              signatuurkokteilid, säravad baarmenid ja õhkkonna, millest
-              külalised räägivad veel kaua pärast muusika vaibumist.
+              MustMull toob teie üritusele professionaalsuse, lõbu ja
+              unustamatu elamuse - maitsvad ja erilised kokteilid, säravad
+              baarmenid ja õhkkonna, millest räägitakse kaua pärast viimast
+              lonksu. Me ei oota, et teie meie juurde jõuaksite - me tuleme
+              sinna, kus te soovite kokteile ja lahedat meeleolu nautida!
             </p>
           </div>
         </div>
