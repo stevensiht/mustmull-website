@@ -3,7 +3,7 @@ import { ContactSection } from "@/components/sections/contact";
 import { GallerySection } from "@/components/sections/gallery";
 import { HeroSection } from "@/components/sections/hero";
 import { ServicesSection } from "@/components/sections/services";
-import { SignatureSection } from "@/components/sections/signature";
+// import { SignatureSection } from "@/components/sections/signature";
 import { StorySection } from "@/components/sections/story";
 import { TestimonialsSection } from "@/components/sections/testimonials";
 
@@ -16,7 +16,7 @@ export default function Home() {
         <HeroSection />
         <StorySection />
         <ServicesSection />
-        <SignatureSection />
+        {/* <SignatureSection /> */}
         <GallerySection />
         <TestimonialsSection />
         <ContactSection />

@@ -11,12 +11,6 @@ const testimonials = [
     quote:
       "Koostöö Musta Mulliga on ladus, kindel, usaldusväärne ja soe! Oma ala proffidega saab teenus just selline, millist üritusele vaja on. Kogused on õiged, baaridaamid/manid on ägedad, maitsed on lummavad! MustMull ei löö risti ette ka hulljulgematele ideedele, millega rõõmuga kaasa minnakse. Enda poolt antakse alati maksimum, et nii tellija kui baarikülaline rahul oleks ja seepärast on Musta Mulli ägeda baarimajakese juures alati lõbus seltskondlik sumin. Seda ürituskorraldajad ostaksid! Ja, no - MustMull - nimi on ka väga lahe! :)",
   },
-  {
-    name: "Jordan H.",
-    role: "40. sünnipäeva pidu",
-    quote:
-      "Mängulised, professionaalsed ja kuidagi jätsid juba ühe ringi järel meelde iga külalise lemmikjoogi.",
-  },
 ];
 
 export function TestimonialsSection() {
@@ -30,10 +24,10 @@ export function TestimonialsSection() {
           <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
             Kliendid, keda tähistame.
           </h2>
-          <p className="max-w-2xl text-base text-white/70 sm:text-lg">
+          {/* <p className="max-w-2xl text-base text-white/70 sm:text-lg">
             Vaheta need peagi oma arvustuste vastu, kui oleme sinu ürituse
             raputanud.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid gap-5 sm:grid-cols-3">
