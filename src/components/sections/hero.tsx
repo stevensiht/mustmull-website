@@ -8,10 +8,10 @@ export function HeroSection() {
         fill
         priority
         className="object-cover object-center opacity-80"
-        src="https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?auto=format&fit=crop&w=2000&q=80"
-        alt="Baarmen valab kokteili neoonvalguse peegeldustes"
+        src="/images/IMG_20251010_104558.jpg"
+        alt="MustMulli mobiilne kokteilibaar sündmusel"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-background backdrop-blur-[1px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-background backdrop-blur-[1px]" />
 
       <div className="relative z-10 mx-auto flex min-h-[90vh] max-w-5xl flex-col gap-12 px-6 pb-20 pt-28 sm:px-8">
         <div className="flex flex-col gap-8">
