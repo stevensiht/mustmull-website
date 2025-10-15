@@ -11,7 +11,7 @@ export function StorySection() {
           <Image
             fill
             className="object-cover object-center"
-            src="https://images.unsplash.com/photo-1609345265499-2133bbeb6ce5?q=80&w=2000&auto=format&fit=crop"
+            src="/images/DSC_1367.jpg"
             alt="Baarmenid valmistavad jooke erapeol"
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-background/70 via-transparent to-transparent" />

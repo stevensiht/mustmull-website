@@ -279,7 +279,7 @@ export function renderContactConfirmationText({
 
   return (
     `${namePart}Täname, et võtsite meiega ühendust! ` +
-    `Oleme Teie päringu kätte saanud ning võtame Teiega ühendust 24 tunni jooksul.\n\n` +
+    `Oleme Teie päringu kätte saanud ning võtame Teiega ühendust 48 tunni jooksul.\n\n` +
     (serviceLine ?? "") +
     (dateLine ?? "") +
     "Kui Teil on lisaküsimusi või soovite täpsustada detaile enne, kui me ühendust võtame, vastake julgelt sellele kirjale või helistage numbril +372 5555 1234.\n\n" +
@@ -367,7 +367,7 @@ export function ContactConfirmationEmail({
               </p>
               <p style={{ ...textStyle, marginBottom: "16px" }}>
                 Täname, et võtsite meiega ühendust! Oleme Teie päringu kätte
-                saanud ning võtame Teiega ühendust 24 tunni jooksul, et
+                saanud ning võtame Teiega ühendust 48 tunni jooksul, et
                 täpsustada detailid ja pakkuda Teile parimat võimalikku
                 lahendust.
               </p>

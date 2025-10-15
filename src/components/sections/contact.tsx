@@ -4,9 +4,9 @@ import { FormEvent, useState } from "react";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
-const defaultStatusMessage = "Vastame 24 tunni jooksul";
+const defaultStatusMessage = "Vastame 48 tunni jooksul";
 const successMessage =
-  "Oleme Teie päringu kätte saanud. Vastame teile 24 tunni jooksul.";
+  "Oleme Teie päringu kätte saanud. Vastame teile 48 tunni jooksul.";
 
 export function ContactSection() {
   const [status, setStatus] = useState<FormStatus>("idle");
@@ -73,15 +73,18 @@ export function ContactSection() {
       </div>
 
       <div className="mx-auto flex max-w-4xl flex-col gap-8 px-6 text-center sm:px-8">
-        <span className="text-xs uppercase tracking-[0.35em] text-accent">
-          Teeme plaani
-        </span>
-        <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-          Valmis MustMulli broneerima?
-        </h2>
+        <div>
+          <span className="mb-4 block text-xs uppercase tracking-[0.35em] text-accent">
+            Kontakt
+          </span>
+          <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
+            Tekkis huvi ja sooviksid saada pakkumist?
+          </h2>
+        </div>
         <p className="text-base text-white/70 sm:text-lg">
-          Räägi meile oma üritusest, külaliste arvust ja unistuste jookidest -
-          vastame 24 tunni jooksul.
+          Tutvusta meile oma planeeritavat üritust, lisa kokteilieelistused ja
+          anna teada külaliste arvust - nii saame sulle parima pakkumise
+          koostada.
         </p>
         <form
           className="grid gap-6 text-left"
@@ -228,7 +231,11 @@ export function ContactSection() {
                   label: "Haagisbaar",
                   value: "trailer",
                 },
-                { id: "service-mobile", label: "Liikuv baar", value: "mobile" },
+                {
+                  id: "service-mobile",
+                  label: "Mobiilne baarilett",
+                  value: "mobile",
+                },
                 { id: "service-both", label: "Mõlemad", value: "both" },
               ].map((option) => (
                 <label
@@ -288,9 +295,6 @@ export function ContactSection() {
             </button>
           </div>
         </form>
-        <p className="text-xs uppercase tracking-[0.35em] text-white/60">
-          Teenindame üle Eesti ja ka kaugemal
-        </p>
       </div>
     </section>
   );

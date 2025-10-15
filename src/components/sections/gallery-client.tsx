@@ -102,14 +102,14 @@ export function GalleryClient({ images }: GalleryClientProps) {
   return (
     <section className="bg-background py-20">
       <div className="mx-auto flex max-w-5xl flex-col gap-8 px-6 sm:px-8">
-        <div className="space-y-3">
-          <span className="text-xs uppercase tracking-[0.35em] text-accent">
+        <div>
+          <span className="mb-4 block text-xs uppercase tracking-[0.35em] text-accent">
             Hetked, mida armastame
           </span>
           <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
             Galerii
           </h2>
-          <p className="text-base text-white/70 sm:text-lg">
+          <p className="mt-3 text-base text-white/70 sm:text-lg">
             Väike pilguheit meeleolule, mille kaasa toome—vaheta need peagi oma
             võitude vastu.
           </p>
@@ -239,16 +239,16 @@ export function GalleryClient({ images }: GalleryClientProps) {
           )}
 
           <div
-            className="relative flex w-full max-w-4xl flex-col gap-4"
+            className="relative flex w-full max-w-[90vw] flex-col gap-4 md:max-w-4xl xl:max-w-5xl"
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="relative aspect-[3/2] w-full overflow-hidden rounded-3xl bg-black">
+            <div className="relative h-[65vh] w-full max-h-[90vh] overflow-hidden rounded-3xl bg-black sm:h-[70vh] md:h-[75vh]">
               <Image
                 src={activeImage.src}
                 alt={activeAlt}
                 fill
                 className="object-contain"
-                sizes="(max-width: 768px) 100vw, 1024px"
+                sizes="(max-width: 768px) 90vw, (max-width: 1280px) 70vw, 1100px"
                 priority
               />
             </div>

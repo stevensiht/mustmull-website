@@ -121,7 +121,7 @@ export async function POST(request: Request) {
 
   const serviceLabelMap: Record<string, string> = {
     trailer: "Haagisbaar",
-    mobile: "Liikuv baar",
+    mobile: "Mobiilne baarilett",
     both: "Mõlemad",
   };
 

@@ -1,6 +1,6 @@
 const testimonials = [
   {
-    name: "Kristi D.",
+    name: "Kerli D.",
     role: "Võidupüha pidu",
     quote:
       "MustMull on imeline kooslus, mis teeb sündmuse väga eriliseks. Mina näiteks armastan Jaanipäeva ja selle tähistamist. Mõnel aastal käib mul sel ajal kodus 100 sõpra, teisel aastal 300 ja kolmandal 8. Kui MustMull kohal on, siis teeb see olukorra pidulikuks nagu Võidupühale kohane. Ja nad ei tee mingit numbrit sellest, kui palju sul rahvast on. Imetabased kokteilid, nad selgitavad, miks ja mida tehakse, naerusuised inimeste inimesed - lõbus, maitsev, läbimõeldud ja pidulik on nende märksõnad.",
@@ -17,12 +17,12 @@ export function TestimonialsSection() {
   return (
     <section className="bg-muted/70 py-20">
       <div className="mx-auto flex max-w-5xl flex-col gap-10 px-6 sm:px-8">
-        <div className="space-y-3">
-          <span className="text-xs uppercase tracking-[0.35em] text-accent">
-            Kiidusõnad
+        <div>
+          <span className="mb-4 block text-xs uppercase tracking-[0.35em] text-accent">
+            Kliendid meist
           </span>
           <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-            Kliendid, keda tähistame.
+            Tagasiside
           </h2>
           {/* <p className="max-w-2xl text-base text-white/70 sm:text-lg">
             Vaheta need peagi oma arvustuste vastu, kui oleme sinu ürituse
