@@ -21,7 +21,7 @@ export function SiteFooter() {
             Kontakt
           </span>
           <Link
-            href="mailto:info@mustmull.com"
+            href="mailto:info@mustmull.ee"
             className="flex items-center gap-3 hover:text-white sm:justify-end"
           >
             <svg
@@ -48,7 +48,7 @@ export function SiteFooter() {
                 strokeLinejoin="round"
               />
             </svg>
-            <span>info@mustmull.com</span>
+            <span>info@mustmull.ee</span>
           </Link>
           <Link
             href="tel:+3725201648"
