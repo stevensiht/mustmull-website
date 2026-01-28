@@ -12,31 +12,6 @@ const darkBackground = "#0f1015";
 const cardBackground = "#181922";
 const dividerColor = "rgba(255,255,255,0.08)";
 
-const checkIconSrc = [
-  "data:image/svg+xml;base64,",
-  "PHN2ZyB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHZpZXdCb3g9IjAgMCA5MCA5MCIgZmlsbD0ibm9uZSIg",
-  "eG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ1IDBDMjAuMTgyNyAw",
-  "IDAgMjAuMTgyNyAwIDQ1QzAgNjkuODE3MyAyMC4xODI3IDkwIDQ1IDkwQzY5LjgxNzMgOTAgOTAgNjku",
-  "ODE3MyA5MCA0NUM5MCAyMC4xODI3IDY5LjgxNzMgMCA0NSAwWk00NSA2QzY2LjU3NDYgNiA4NCAyMy40",
-  "MjUzIDg0IDQ1Qzg0IDY2LjU3NDYgNjYuNTc0NiA4NCA0NSA4NEMyMy40MjU0IDg0IDYgNjYuNTc0NiA2",
-  "IDQ1QzYgMjMuNDI1MyAyMy40MjU0IDYgNDUgNlpNNjYuOTA2MiAyNS45Njg4QzY2LjEyMjYgMjUuOTk5",
-  "NyA2NS4zODIzIDI2LjMzNjIgNjQuODQzOCAyNi45MDYyTDM1Ljk2ODggNTYuNzE4OEwyNS4xMjUgNDUu",
-  "ODc1QzI0Ljg1NTIgNDUuNTY2MSAyNC41MjUgNDUuMzE1NyAyNC4xNTQ3IDQ1LjEzOTRDMjMuNzg0NCA0",
-  "NC45NjMxIDIzLjM4MTggNDQuODY0NiAyMi45NzE5IDQ0Ljg1QzIyLjU2MiA0NC44MzU0IDIyLjE1MzUg",
-  "NDQuOTA1IDIxLjc3MTYgNDUuMDU0NEMyMS4zODk2IDQ1LjIwMzkgMjEuMDQyNCA0NS40MzAxIDIwLjc1",
-  "MTMgNDUuNzE5QzIwLjQ2MDIgNDYuMDA4IDIwLjIzMTUgNDYuMzUzNSAyMC4wNzkyIDQ2LjczNDRDMTku",
-  "OTI2OSA0Ny4xMTUyIDE5Ljg1NDMgNDcuNTIzMiAxOS44NjU5IDQ3LjkzMzJDMTkuODc3NSA0OC4zNDMy",
-  "IDE5Ljk3MyA0OC43NDY0IDIwLjE0NjYgNDkuMTE4QzIwLjMyMDEgNDkuNDg5NiAyMC41NjgxIDQ5Ljgy",
-  "MTcgMjAuODc1IDUwLjA5MzhMMzMuODc1IDYzLjA5MzhDMzQuMTU2MyA2My4zNzYxIDM0LjQ5MTEgNjMu",
-  "NTk5NSAzNC44NTk4IDYzLjc1MTFDMzUuMjI4NSA2My45MDI2IDM1LjYyMzYgNjMuOTc5MSAzNi4wMjIy",
-  "IDYzLjk3NjJDMzYuNDIwOCA2My45NzMzIDM2LjgxNDggNjMuODkxIDM3LjE4MTIgNjMuNzM0MUMzNy41",
-  "NDc2IDYzLjU3NzIgMzcuODc5MSA2My4zNDg5IDM4LjE1NjIgNjMuMDYyNUw2OS4xNTYyIDMxLjA2MjVD",
-  "NjkuNTc0NSAzMC42MzM4IDY5Ljg1NDkgMzAuMDg5NiA2OS45NjEzIDI5LjUwMDJDNzAuMDY3NyAyOC45",
-  "MTA3IDY5Ljk5NTIgMjguMzAyOSA2OS43NTMyIDI3Ljc1NUM2OS41MTEyIDI3LjIwNzEgNjkuMTEwNyAy",
-  "Ni43NDQyIDY4LjYwMzMgMjYuNDI1OEM2OC4wOTU5IDI2LjEwNzUgNjcuNTA0OSAyNS45NDgzIDY2Ljkw",
-  "NjIgMjUuOTY4OFoiIGZpbGw9IiNGRjJFOEUiLz4KPC9zdmc+Cg==",
-].join("");
-
 const logoSrc = [
   "data:image/svg+xml;base64,",
   "PHN2ZyB3aWR0aD0iMTAwMCIgaGVpZ2h0PSIxMDAwIiB2aWV3Qm94PSIwIDAgMTAwMCAxMDAwIiBmaWxs",
@@ -228,34 +203,6 @@ const textStyle: CSSProperties = {
 const subtleTextStyle: CSSProperties = {
   ...textStyle,
   color: "rgba(255,255,255,0.65)",
-};
-
-const badgeStyle: CSSProperties = {
-  display: "inline-flex",
-  alignItems: "center",
-  gap: "12px",
-  background:
-    "linear-gradient(135deg, rgba(255,46,142,0.15) 0%, rgba(255,46,142,0.05) 100%)",
-  border: "1px solid rgba(255,46,142,0.35)",
-  borderRadius: "9999px",
-  padding: "10px 18px",
-  fontSize: "13px",
-  fontWeight: 600,
-  letterSpacing: "0.08em",
-  textTransform: "uppercase",
-  color: accentColor,
-};
-
-const checkIconStyle: CSSProperties = {
-  display: "inline-flex",
-  alignItems: "center",
-  justifyContent: "center",
-  width: "28px",
-  height: "28px",
-  borderRadius: "9999px",
-  backgroundColor: "rgba(255,46,142,0.22)",
-  color: accentColor,
-  overflow: "hidden",
 };
 
 const imageStyle: CSSProperties = {
