@@ -264,7 +264,7 @@ const imageStyle: CSSProperties = {
   height: "auto",
 };
 
-export const contactConfirmationSubject = "Oleme Teie päringu kätte saanud";
+export const contactConfirmationSubject = "MustMull on Teie päringu kätte saanud!";
 
 export function renderContactConfirmationText({
   fullName,
@@ -282,7 +282,7 @@ export function renderContactConfirmationText({
     `Oleme Teie päringu kätte saanud ning võtame Teiega ühendust 48 tunni jooksul.\n\n` +
     (serviceLine ?? "") +
     (dateLine ?? "") +
-    "Kui Teil on lisaküsimusi või soovite täpsustada detaile enne, kui me ühendust võtame, vastake julgelt sellele kirjale või helistage numbril +372 5555 1234.\n\n" +
+    "Kui Teil on lisaküsimusi või soovite täpsustada detaile enne, kui me ühendust võtame, vastake julgelt sellele kirjale või helistage numbril +372 520 1648.\n\n" +
     "Soojade tervitustega,\nMustMull meeskond"
   );
 }
@@ -331,16 +331,7 @@ export function ContactConfirmationEmail({
                   height={160}
                 />
               </div>
-              <div style={badgeStyle}>
-                <span style={checkIconStyle}>
-                  <img
-                    src={checkIconSrc}
-                    alt=""
-                    style={{ ...imageStyle, width: 18, height: 18 }}
-                  />
-                </span>
-                Oleme päringu kätte saanud
-              </div>
+             
               <h1
                 style={{
                   fontSize: "28px",
@@ -349,7 +340,7 @@ export function ContactConfirmationEmail({
                   fontWeight: 600,
                 }}
               >
-                Oleme Teie päringu kätte saanud
+                MustMull on Teie päringu kätte saanud!
               </h1>
             </td>
           </tr>
@@ -438,14 +429,14 @@ export function ContactConfirmationEmail({
                 kui ühendust võtame, vastake julgelt sellele kirjale või
                 helistage numbril{" "}
                 <a
-                  href="tel:+37255551234"
+                  href="tel:+3725201648"
                   style={{
                     color: accentColor,
                     textDecoration: "none",
                     fontWeight: 600,
                   }}
                 >
-                  +372&nbsp;5555&nbsp;1234
+                  +372&nbsp;520&nbsp;1648
                 </a>
                 .
               </p>
